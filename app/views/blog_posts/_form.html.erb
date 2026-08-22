@@ -8,12 +8,12 @@
   <% end %>
 
     <div>
-      <%= form.label :title %>
-      <%= form.text_field :title %>
+      <%= form.label :title, class: "mb-2 text-sm font-medium text-gray-700" %>
+      <%= form.text_field :title, class: "w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" %>
     </div>
     <div>
-      <%= form.label :body %>
-      <%= form.text_area :body %>
+      <%= form.label :body, class: "mb-2 text-sm font-medium text-gray-700" %>
+      <%= form.text_area :body, class: "w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" %>
     </div>
     <%= form.button "Submit" %>
 <% end %>

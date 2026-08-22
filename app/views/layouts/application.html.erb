@@ -23,18 +23,18 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="prose">
+  <body class="bg-white py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-    <div>
+    <div class="grid grid-cols-2 gap-8 mx-auto mt-8 max-w-screen-md text-gray-900 lg:mt-14 sm:grid-cols-3">
         <% if user_signed_in? %>
           <%= link_to "New Blog Post", new_blog_post_path %>
           <%#= link_to "Profile", edit_user_registration_path %>
           <%= button_to "Log out", destroy_user_session_path, method: :delete %>
         <%# else %>
           <%#= link_to "Log in", new_user_session_path %>
-          <%#= link_to "Sign up", new_user_registration_path %>
+          <%= link_to "Sign up", new_user_registration_path %>
         <% end %>
     </div>
     <%= yield %>

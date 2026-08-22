@@ -1,4 +1,4 @@
-<h1>Edit Blog Post</h1>
+<h1 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 lg:text-5xl">Edit Blog Post</h1>
 <%= render partial: 'form', locals: { blog_post: @blog_post } %>
 
 <%= button_to "Delete", @blog_post, method: :delete, data: {turbo_confirm: "Are you sure?"} %>
