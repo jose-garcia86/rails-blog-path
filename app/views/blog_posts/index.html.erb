@@ -11,6 +11,8 @@
   </div>
 <% end %>
 
+<% if @pagy.count > @pagy.limit %>
 <div class="w-full max-w-md mx-auto py-12 flex justify-center">
     <%== @pagy.series_nav %>
 </div>
+<% end %>
