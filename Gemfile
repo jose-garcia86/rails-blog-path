@@ -65,3 +65,5 @@ gem "devise", "~> 5.0"
 gem "tailwindcss-rails", "~> 4.6"
 
 gem "aws-sdk-s3", require: false
+
+gem "pagy", "~> 43.6"

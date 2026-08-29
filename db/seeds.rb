@@ -13,3 +13,7 @@ user.update!(
   password: "md6!Rswcc!^d7U7",
   password_confirmation: "md6!Rswcc!^d7U7"
 )
+
+# 100.times do |i|
+#   BlogPost.create title: "Blog Post #{i + 1}", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", published_at: current.now
+# end
